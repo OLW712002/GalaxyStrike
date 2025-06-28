@@ -1022,10 +1022,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2bc10f840f402b4fb1daa54adec3b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  translateSpeed: 30
   xClampRange: 15
   yClampRangeUp: 25
   yClampRangeDown: 10
-  movespeed: 50
+  horizontalMove: 20
+  verticalMove: 20
+  rotationSpeed: 20
 --- !u!114 &1360875554
 MonoBehaviour:
   m_ObjectHideFlags: 0

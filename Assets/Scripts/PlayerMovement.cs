@@ -3,9 +3,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float movespeed = 10f;
-
-    [Header("MoveRange")]
+    [Header("Translation")]
+    [SerializeField] float translateSpeed = 10f;
     [SerializeField] float xClampRange = 10f;
     [SerializeField] float yClampRangeUp = 10f;
     [SerializeField] float yClampRangeDown = 10f;
@@ -13,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Rotation")]
     [SerializeField] float horizontalMove = 20f;
     [SerializeField] float verticalMove = 20f;
+    [SerializeField] float rotationSpeed = 10f;
 
     Vector2 movement;
 
@@ -30,11 +30,11 @@ public class PlayerMovement : MonoBehaviour
 
     void ProcessTranslating()
     {
-        float xOffset = movement.x * movespeed * Time.deltaTime;
+        float xOffset = movement.x * translateSpeed * Time.deltaTime;
         float rawXPos = transform.localPosition.x + xOffset;
         float clampedXPos = Mathf.Clamp(rawXPos, -xClampRange, xClampRange);
 
-        float yOffset = movement.y * movespeed * Time.deltaTime;
+        float yOffset = movement.y * translateSpeed * Time.deltaTime;
         float rawYPos = transform.localPosition.y + yOffset;
         float clampedYPos = Mathf.Clamp(rawYPos, -yClampRangeDown, yClampRangeUp);
 
@@ -46,6 +46,6 @@ public class PlayerMovement : MonoBehaviour
         float horizontalValue = horizontalMove * -movement.x;
         float verticalValue = verticalMove * -movement.y;
         Quaternion targetRotation = Quaternion.Euler(verticalValue, 0f, horizontalValue);
-        transform.localRotation = targetRotation;
+        transform.localRotation = Quaternion.Lerp(transform.localRotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
 }
