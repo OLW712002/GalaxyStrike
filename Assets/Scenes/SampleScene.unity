@@ -1026,8 +1026,8 @@ MonoBehaviour:
   xClampRange: 15
   yClampRangeUp: 25
   yClampRangeDown: 10
-  horizontalMove: 20
-  verticalMove: 20
+  rollFactor: 20
+  pitchFactor: 30
   rotationSpeed: 20
 --- !u!114 &1360875554
 MonoBehaviour:
