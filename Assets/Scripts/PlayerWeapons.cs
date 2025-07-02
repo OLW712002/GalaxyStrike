@@ -5,8 +5,7 @@ public class PlayerWeapons : MonoBehaviour
 {
     [SerializeField] ParticleSystem laser;
 
-    float firingTime = 1f;
-    float counter = 0f;
+    bool isFiring = false;
     ParticleSystem.EmissionModule laserControl;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -19,17 +18,16 @@ public class PlayerWeapons : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        counter += Time.deltaTime;
-        if (counter > firingTime)
-        {
-            laserControl.enabled = false;
-        }
+        ProcessFiring();
     }
 
     void OnFire(InputValue value)
     {
-        Debug.Log(value.isPressed);
-        laserControl.enabled = true;
-        counter = 0;
+        isFiring = value.isPressed;
+    }
+
+    void ProcessFiring()
+    {
+        laserControl.enabled = isFiring;
     }
 }

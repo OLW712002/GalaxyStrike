@@ -84,7 +84,7 @@
                     "name": "",
                     "id": "0cb1712a-c05f-474f-b80d-99cabf2b2638",
                     "path": "<Keyboard>/space",
-                    "interactions": "",
+                    "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "",
                     "action": "Fire",
