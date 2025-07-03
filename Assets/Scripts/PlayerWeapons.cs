@@ -3,19 +3,16 @@ using UnityEngine.InputSystem;
 
 public class PlayerWeapons : MonoBehaviour
 {
-    [SerializeField] ParticleSystem laser;
+    [SerializeField] ParticleSystem[] lasers;
 
     bool isFiring = false;
     ParticleSystem.EmissionModule laserControl;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        laserControl = laser.emission;
-        laserControl.enabled = false;
+        //laserControl = laser.emission;
     }
 
-    // Update is called once per frame
     void Update()
     {
         ProcessFiring();
@@ -28,6 +25,10 @@ public class PlayerWeapons : MonoBehaviour
 
     void ProcessFiring()
     {
-        laserControl.enabled = isFiring;
+        foreach (ParticleSystem laser in lasers)
+        {
+            laserControl = laser.emission;
+            laserControl.enabled = isFiring;
+        }
     }
 }
