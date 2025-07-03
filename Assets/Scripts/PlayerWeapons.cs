@@ -17,12 +17,12 @@ public class PlayerWeapons : MonoBehaviour
     {
         laserGroup.Add(lasers1);
         laserGroup.Add(lasers2);
+        ResetWeapon();
     }
 
     void Update()
     {
-        ProcessChangeWeapon(lasermode);
-        ProcessFiring();
+        ProcessFiring(lasermode);
     }
 
     void OnFire(InputValue value)
@@ -30,19 +30,36 @@ public class PlayerWeapons : MonoBehaviour
         isFiring = value.isPressed;
     }
 
-    void ProcessChangeWeapon(int newlasermode)
+    void OnChangeWeapon()
+    {
+        lasermode++;
+        if (lasermode > laserGroup.Count) lasermode = 1;
+        isWeaponChange = true;
+    }
+
+    void ProcessFiring(int lasermode)
     {
         if (isWeaponChange)
         {
-            foreach (ParticleSystem[] lasers in laserGroup)
-            {
-                foreach (ParticleSystem laser in lasers)
-                {
-                    laserControl = laser.emission;
-                    laserControl.enabled = false;
-                }
-            }
+            ResetWeapon();
             isWeaponChange = false;
+        }
+        foreach (ParticleSystem laser in laserGroup[lasermode-1])
+        {
+            laserControl = laser.emission;
+            laserControl.enabled = isFiring;
+        }
+    }
+
+    void ResetWeapon()
+    {
+        foreach (ParticleSystem[] lasers in laserGroup)
+        {
+            foreach (ParticleSystem laser in lasers)
+            {
+                laserControl = laser.emission;
+                laserControl.enabled = false;
+            }
         }
     }
 
@@ -50,14 +67,5 @@ public class PlayerWeapons : MonoBehaviour
     {
         isWeaponChange = true;
         lasermode = newLasermode;
-    }
-
-    void ProcessFiring()
-    {
-        foreach (ParticleSystem laser in lasers1)
-        {
-            laserControl = laser.emission;
-            laserControl.enabled = isFiring;
-        }
     }
 }
