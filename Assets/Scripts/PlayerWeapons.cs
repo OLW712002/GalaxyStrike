@@ -8,6 +8,8 @@ public class PlayerWeapons : MonoBehaviour
     [SerializeField] ParticleSystem[] lasers1;
     [SerializeField] ParticleSystem[] lasers2;
     [SerializeField] RectTransform crosshair;
+    [SerializeField] Transform targetPoint;
+    [SerializeField] float targetDistance = 100f;
 
     List<ParticleSystem[]> laserGroup = new List<ParticleSystem[]>();
     bool isFiring = false;
@@ -25,6 +27,7 @@ public class PlayerWeapons : MonoBehaviour
     void Update()
     {
         MoveCrosshair();
+        MoveTargetPoint();
         ProcessFiring(lasermode);
     }
 
@@ -75,5 +78,11 @@ public class PlayerWeapons : MonoBehaviour
     void MoveCrosshair()
     {
         crosshair.position = Input.mousePosition;
+    }
+
+    void MoveTargetPoint()
+    {
+        Vector3 targetPointPos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, targetDistance);
+        targetPoint.position = Camera.main.ScreenToWorldPoint(targetPointPos);
     }
 }
