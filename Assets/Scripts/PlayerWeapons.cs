@@ -28,6 +28,7 @@ public class PlayerWeapons : MonoBehaviour
     {
         MoveCrosshair();
         MoveTargetPoint();
+        AimLaser(lasermode);
         ProcessFiring(lasermode);
     }
 
@@ -84,5 +85,17 @@ public class PlayerWeapons : MonoBehaviour
     {
         Vector3 targetPointPos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, targetDistance);
         targetPoint.position = Camera.main.ScreenToWorldPoint(targetPointPos);
+    }
+
+    void AimLaser(int lasermode)
+    {
+        
+        
+        foreach (ParticleSystem laser in laserGroup[lasermode - 1])
+        {
+            Vector3 laserDirection = targetPoint.position - transform.position;
+            Quaternion rotateToTarget = Quaternion.LookRotation(laserDirection);
+            laser.transform.rotation = rotateToTarget;
+        }
     }
 }
