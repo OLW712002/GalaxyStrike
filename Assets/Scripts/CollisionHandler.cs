@@ -6,4 +6,9 @@ public class CollisionHandler : MonoBehaviour
     {
         Debug.Log("Hit " + other.name);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Destroy(gameObject);
+    }
 }
