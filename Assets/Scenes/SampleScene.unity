@@ -1587,6 +1587,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f229b882fdd7f6344864e6e4eb74911b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerDestroyedVFX: {fileID: 1084472406778240122, guid: 8b9f96a9e80fe684ea401e8072e71f18, type: 3}
+  masterTimeline: {fileID: 1198058175}
 --- !u!1 &1400427052
 GameObject:
   m_ObjectHideFlags: 0
@@ -1810,7 +1812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f7ec25f99851054a85fb16d2d707cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyedVFX: {fileID: 5155814579962085192, guid: b035b51ffd116e24889ad633e49ecc4b, type: 3}
+  enemyDestroyedVFX: {fileID: 6894743607683922135, guid: cc10cac62303f7649959892c5f3e1cf9, type: 3}
 --- !u!1 &1844322817
 GameObject:
   m_ObjectHideFlags: 0
