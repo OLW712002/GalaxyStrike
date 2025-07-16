@@ -70,9 +70,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 813933402279920349, guid: 0b93c60d4344c2248972abbc8fa9f964, type: 3}
+      propertyPath: scoreValue
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 813933402279920349, guid: 0b93c60d4344c2248972abbc8fa9f964, type: 3}
+      propertyPath: enemyHealth
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3476534787515123213, guid: 0b93c60d4344c2248972abbc8fa9f964, type: 3}
       propertyPath: m_Name
-      value: Enemy 2 Variant
+      value: Starborne
       objectReference: {fileID: 0}
     - target: {fileID: 3968325139342372615, guid: 0b93c60d4344c2248972abbc8fa9f964, type: 3}
       propertyPath: m_Size.x
