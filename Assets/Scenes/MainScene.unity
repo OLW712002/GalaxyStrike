@@ -219,7 +219,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 20}
-  m_SizeDelta: {x: -100, y: 100}
+  m_SizeDelta: {x: -1000, y: 100}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &200561542
 MonoBehaviour:
@@ -1492,6 +1492,8 @@ PlayableDirector:
     value: {fileID: 916242703}
   - key: {fileID: 8138822650953300689, guid: 58e57c4bb4447e143be229cf2a6d68cc, type: 2}
     value: {fileID: 2130455425}
+  - key: {fileID: -365789125502503140, guid: 58e57c4bb4447e143be229cf2a6d68cc, type: 2}
+    value: {fileID: 481103522}
   m_ExposedReferences:
     m_References:
     - 75cb9a52fe4c3124784aab09971cf55c: {fileID: 200561540}
