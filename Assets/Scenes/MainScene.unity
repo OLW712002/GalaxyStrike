@@ -498,6 +498,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7101372933277265579, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+      propertyPath: m_PlayableAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7445e8a7e774553409c5b01bc0f566e4, type: 2}
+    - target: {fileID: 7101372933277265579, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+      propertyPath: m_SceneBindings.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101372933277265579, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+      propertyPath: m_SceneBindings.Array.data[3].key
+      value: 
+      objectReference: {fileID: 3961196227081630064, guid: 7445e8a7e774553409c5b01bc0f566e4, type: 2}
+    - target: {fileID: 7101372933277265579, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+      propertyPath: m_SceneBindings.Array.data[4].key
+      value: 
+      objectReference: {fileID: -99814856792212078, guid: 7445e8a7e774553409c5b01bc0f566e4, type: 2}
+    - target: {fileID: 7101372933277265579, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+      propertyPath: m_SceneBindings.Array.data[5].key
+      value: 
+      objectReference: {fileID: 5782148817570206195, guid: 7445e8a7e774553409c5b01bc0f566e4, type: 2}
+    - target: {fileID: 7101372933277265579, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+      propertyPath: m_SceneBindings.Array.data[3].value
+      value: 
+      objectReference: {fileID: 629283403}
+    - target: {fileID: 7101372933277265579, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+      propertyPath: m_SceneBindings.Array.data[4].value
+      value: 
+      objectReference: {fileID: 480779018}
+    - target: {fileID: 7101372933277265579, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+      propertyPath: m_SceneBindings.Array.data[5].value
+      value: 
+      objectReference: {fileID: 1007615280}
+    - target: {fileID: 9125360123852302086, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125360123852302086, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -743,6 +783,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 475726902}
   m_CullTransparentMesh: 1
+--- !u!95 &480779018 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7668985526257634014, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+  m_PrefabInstance: {fileID: 400084861}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &481103522
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,6 +960,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0, y: 1}
+--- !u!95 &629283403 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4961178045996405187, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+  m_PrefabInstance: {fileID: 400084861}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &636551906 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3a04b80157e470b4ca88dffd1d5f8e17, type: 3}
@@ -1183,6 +1233,11 @@ Transform:
 Animator:
   m_CorrespondingSourceObject: {fileID: 5077174511651022278, guid: 78f1b1dd65346ba4a8cf67ec619406bc, type: 3}
   m_PrefabInstance: {fileID: 3993430217139578436}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1007615280 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8535956370582929851, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+  m_PrefabInstance: {fileID: 400084861}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1117348642
 GameObject:
@@ -1497,6 +1552,7 @@ PlayableDirector:
   m_ExposedReferences:
     m_References:
     - 75cb9a52fe4c3124784aab09971cf55c: {fileID: 200561540}
+    - 0077c96370873f44289030714d34c5f9: {fileID: 400084863}
     - 81a09cf38f5f17647bd70d884dcccca8: {fileID: 400084863}
     - 7f716d633af861646b5d03148c0810f6: {fileID: 200561540}
     - 0203efff3422d5e4d80788db8c24b659: {fileID: 911267429}
