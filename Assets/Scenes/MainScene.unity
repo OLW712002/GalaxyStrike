@@ -1726,7 +1726,7 @@ GameObject:
   - component: {fileID: 1468936670}
   - component: {fileID: 1468936668}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: Portrait Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1770,7 +1770,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
