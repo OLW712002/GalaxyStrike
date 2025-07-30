@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.Playables;
+using Kino;
 
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] GameObject playerDestroyedVFX;
     [SerializeField] PlayableDirector masterTimeline;
+    [SerializeField] AnalogGlitch analogGlitch;
 
     private void OnTriggerEnter(Collider other)
     {
