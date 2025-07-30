@@ -1725,7 +1725,6 @@ GameObject:
   - component: {fileID: 1468936667}
   - component: {fileID: 1468936670}
   - component: {fileID: 1468936668}
-  - component: {fileID: 1468936671}
   m_Layer: 6
   m_Name: Portrait Camera
   m_TagString: Untagged
@@ -1843,23 +1842,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &1468936671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1468936666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 870b9a8f0f82f4f56800cc427bcd1025, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _scanLineJitter: 0.7
-  _verticalJump: 0.7
-  _horizontalShake: 0.7
-  _colorDrift: 0.7
-  _shader: {fileID: 4800000, guid: da33272284ea24f208f36998880990be, type: 3}
 --- !u!1 &1630093179
 GameObject:
   m_ObjectHideFlags: 0
@@ -2321,7 +2303,7 @@ PrefabInstance:
     - target: {fileID: 8011323516204631268, guid: 78f1b1dd65346ba4a8cf67ec619406bc, type: 3}
       propertyPath: analogGlitch
       value: 
-      objectReference: {fileID: 1468936671}
+      objectReference: {fileID: 0}
     - target: {fileID: 8011323516204631268, guid: 78f1b1dd65346ba4a8cf67ec619406bc, type: 3}
       propertyPath: masterTimeline
       value: 
