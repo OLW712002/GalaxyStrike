@@ -13,6 +13,7 @@ public class CollisionHandler : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        FindFirstObjectByType<GameSceneManager>().ReloadScene();
         masterTimeline.playableGraph.Stop();
         GameObject vfx = Instantiate(playerDestroyedVFX, transform.position, Quaternion.identity);
         Destroy(vfx, 2f);
