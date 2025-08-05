@@ -555,6 +555,16 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2145477423}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &288340608 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 58149716413132593, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+  m_PrefabInstance: {fileID: 1349554685}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &288340609 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2238288123115978833, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+  m_PrefabInstance: {fileID: 1349554685}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &382413326
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,7 +608,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 58149716413132593, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
       propertyPath: m_Name
-      value: Three LightWarp (2)
+      value: Three LightWarp Extended
       objectReference: {fileID: 0}
     - target: {fileID: 2238288123115978833, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -847,6 +857,7 @@ Transform:
   m_Children:
   - {fileID: 911267431}
   - {fileID: 1859881013}
+  - {fileID: 288340609}
   - {fileID: 400084862}
   m_Father: {fileID: 382413327}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1736,17 +1747,22 @@ PlayableDirector:
     value: {fileID: 2130455425}
   m_ExposedReferences:
     m_References:
+    - 923b30fe97fa9674dacd687e9481ac29: {fileID: 200561540}
     - 9eb8c3395d0441e43a749cc88afea3b8: {fileID: 481103522}
     - 3bdab7f7430fcb14699a303071a8c99e: {fileID: 481103522}
+    - 54aaf5ea170efb345bf6d4905f3fe86d: {fileID: 481103522}
     - 7210aacb21dbc6f45a269974c5c5bf93: {fileID: 481103522}
     - 75cb9a52fe4c3124784aab09971cf55c: {fileID: 200561540}
     - 0077c96370873f44289030714d34c5f9: {fileID: 400084863}
+    - bdbe7e1d5381775459c70610fc4373d7: {fileID: 200561540}
     - a73a7e7c5c04a9744b9c080888b2f309: {fileID: 481103522}
     - b6948ff6a57c39041b6b4ff5976e2a64: {fileID: 481103522}
     - 81a09cf38f5f17647bd70d884dcccca8: {fileID: 400084863}
     - 7f716d633af861646b5d03148c0810f6: {fileID: 200561540}
+    - 00302e4b13d889446b817d70d8f1c21b: {fileID: 200561540}
     - 0203efff3422d5e4d80788db8c24b659: {fileID: 911267429}
     - 19f17b34961b55745b4b6ba865d468c3: {fileID: 200561540}
+    - 1e1c8fd4a5d680a488ab02638741563f: {fileID: 288340608}
     - e51611fd3205f5f4fa702978980ecf15: {fileID: 200561540}
     - 183f61dcfa3ada546b1ef2d42f150990: {fileID: 200561540}
     - 1beffb14dfcc70d479821de639778d33: {fileID: 1859881012}
@@ -1796,6 +1812,63 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!1001 &1349554685
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 432678542}
+    m_Modifications:
+    - target: {fileID: 58149716413132593, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+      propertyPath: m_Name
+      value: Three LightWarp (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238288123115978833, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 467.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238288123115978833, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 48.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238288123115978833, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 913.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238288123115978833, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6266895
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238288123115978833, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0825049
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238288123115978833, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.76826
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238288123115978833, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.10114295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238288123115978833, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238288123115978833, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -101.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238288123115978833, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e3bfae280f1bcd64987e9976c6ef0fb3, type: 3}
 --- !u!1 &1400427052
 GameObject:
   m_ObjectHideFlags: 0
@@ -2300,6 +2373,7 @@ MonoBehaviour:
   dialogueText: {fileID: 200561542}
   dialogueLines:
   - We're glad to have you here Lieutenant.  We could really use your help!
+  - Never thought I'd see your face around here general...
   - It's a trap!  Get out of there.
   - Righteo let's finish this once and for all.
   - Like shooting fish in a barrel!
