@@ -7,6 +7,7 @@ public class PlayerWeapons : MonoBehaviour
     [SerializeField] int lasermode = 1;
     [SerializeField] ParticleSystem[] lasers1;
     [SerializeField] ParticleSystem[] lasers2;
+    [SerializeField] ParticleSystem[] lasers3;
     [SerializeField] RectTransform crosshair;
     [SerializeField] Transform targetPoint;
     [SerializeField] float targetDistance = 100f;
@@ -20,6 +21,7 @@ public class PlayerWeapons : MonoBehaviour
     {
         laserGroup.Add(lasers1);
         laserGroup.Add(lasers2);
+        laserGroup.Add(lasers3);
         ResetWeapon();
         Cursor.visible = false;
     }
