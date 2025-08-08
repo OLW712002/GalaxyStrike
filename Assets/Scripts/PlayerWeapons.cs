@@ -91,8 +91,6 @@ public class PlayerWeapons : MonoBehaviour
 
     void AimLaser(int lasermode)
     {
-        
-        
         foreach (ParticleSystem laser in laserGroup[lasermode - 1])
         {
             Vector3 laserDirection = targetPoint.position - transform.position;

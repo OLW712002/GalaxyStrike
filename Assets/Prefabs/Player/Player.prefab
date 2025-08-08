@@ -629,6 +629,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerDestroyedVFX: {fileID: 1084472406778240122, guid: 8b9f96a9e80fe684ea401e8072e71f18, type: 3}
   masterTimeline: {fileID: 0}
+  portraitVolume: {fileID: 0}
+  portraitWindow: {fileID: 0}
 --- !u!54 &4631478959575034041
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -673,7 +675,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 17.948822, y: 4.4452357, z: 16.419464}
   m_Center: {x: -0.0345726, y: 2.462168, z: 0.56550217}
